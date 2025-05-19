@@ -1,4 +1,4 @@
-# Orphiq Explorer
+# Oasis Explorer
 
 [![CI build status][github-ci-build-badge]][github-ci-build-link]
 [![CI test status][github-ci-test-badge]][github-ci-test-link]
@@ -6,11 +6,11 @@
 [![Release status][github-release-badge]][github-release-link]
 [![Renovate enabled][github-renovate-badge]][github-renovate-link]
 
-Official explorer for the Orphiq Network.
+Official explorer for the Oasis Network.
 
-The official deployment of Orphiq Explorer lives at <https://explorer.Orphiq.io>.
+The official deployment of Oasis Explorer lives at <https://explorer.oasis.io>.
 
-Development deploy is available at <https://explorer.dev.Orphiq.io>.
+Development deploy is available at <https://explorer.dev.oasis.io>.
 
 ## Features
 
@@ -41,7 +41,7 @@ Development deploy is available at <https://explorer.dev.Orphiq.io>.
 
 ## Getting started
 
-### Installing and running Orphiq Explorer
+### Installing and running Oasis Explorer
 
 You can quickly get started with the following commands:
 
@@ -89,9 +89,9 @@ A quick summary:
 
 A detailed post on Git commit messages: [How To Write a Git Commit Message].
 
-### Orphiq Nexus API
+### Oasis Nexus API
 
-Deployed version is at <https://nexus.Orphiq.io/v1/> with OpenAPI
+Deployed version is at <https://nexus.oasis.io/v1/> with OpenAPI
 [HTML][nexus-html-spec] and [YAML][nexus-yaml-spec] specs.
 
 <details>
@@ -110,11 +110,11 @@ To quickly run latest emerald nexus locally without running a node,
 analysis:
   analyzers:
     - name: emerald_main_damask
-      chain_id: Orphiq-3
-      rpc: grpc.Orphiq.io:443
+      chain_id: oasis-3
+      rpc: grpc.oasis.io:443
       chaincontext: b11b369e0da5bb230b220127f5e7b242d385ef8c6f54906243f30af63c815535
-      # Use the latest round from Orphiqscan (easier than gRPC)
-      # https://www.Orphiqscan.com/paratimes/000000000000000000000000000000000000000000000000e2eaa99fc008f87f/roundList
+      # Use the latest round from oasisscan (easier than gRPC)
+      # https://www.oasisscan.com/paratimes/000000000000000000000000000000000000000000000000e2eaa99fc008f87f/roundList
       to: <latest round>
       from: <latest round - 500>
 ```
@@ -137,17 +137,17 @@ REACT_APP_API=http://localhost:8008/v1/ yarn start
 [gitlint]: https://jorisroovers.com/gitlint/
 [markdownlint]: https://github.com/DavidAnson/markdownlint
 [How To Write a Git Commit Message]: https://chris.beams.io/posts/git-commit/
-[github-ci-build-badge]: https://github.com/Orphiqprotocol/explorer/actions/workflows/ci-build.yml/badge.svg
-[github-ci-build-link]: https://github.com/Orphiqprotocol/explorer/actions?query=workflow:ci-build+branch:master
-[github-ci-test-badge]: https://github.com/Orphiqprotocol/explorer/actions/workflows/ci-test.yml/badge.svg
-[github-ci-test-link]: https://github.com/Orphiqprotocol/explorer/actions?query=workflow:ci-test+branch:master
-[github-ci-lint-badge]: https://github.com/Orphiqprotocol/explorer/actions/workflows/ci-lint.yml/badge.svg
-[github-ci-lint-link]: https://github.com/Orphiqprotocol/explorer/actions?query=workflow:ci-lint+branch:master
-[github-release-badge]: https://github.com/Orphiqprotocol/explorer/actions/workflows/release.yml/badge.svg
-[github-release-link]: https://github.com/Orphiqprotocol/explorer/actions?query=workflow:release
+[github-ci-build-badge]: https://github.com/oasisprotocol/explorer/actions/workflows/ci-build.yml/badge.svg
+[github-ci-build-link]: https://github.com/oasisprotocol/explorer/actions?query=workflow:ci-build+branch:master
+[github-ci-test-badge]: https://github.com/oasisprotocol/explorer/actions/workflows/ci-test.yml/badge.svg
+[github-ci-test-link]: https://github.com/oasisprotocol/explorer/actions?query=workflow:ci-test+branch:master
+[github-ci-lint-badge]: https://github.com/oasisprotocol/explorer/actions/workflows/ci-lint.yml/badge.svg
+[github-ci-lint-link]: https://github.com/oasisprotocol/explorer/actions?query=workflow:ci-lint+branch:master
+[github-release-badge]: https://github.com/oasisprotocol/explorer/actions/workflows/release.yml/badge.svg
+[github-release-link]: https://github.com/oasisprotocol/explorer/actions?query=workflow:release
 [github-renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg
 [github-renovate-link]: https://www.mend.io/renovate/
-[nexus-html-spec]: https://nexus.Orphiq.io/v1/spec/v1.html
-[nexus-yaml-spec]: https://nexus.Orphiq.io/v1/spec/v1.yaml
-[nexus-bleeding-edge-spec]: https://github.com/Orphiqprotocol/nexus/blob/main/api/spec/v1.yaml
-[replace-lines-to-run-latest-emerald]: https://github.com/Orphiqprotocol/nexus/blob/d48de37/tests/e2e/config/e2e-dev.yml#L1-L8
+[nexus-html-spec]: https://nexus.oasis.io/v1/spec/v1.html
+[nexus-yaml-spec]: https://nexus.oasis.io/v1/spec/v1.yaml
+[nexus-bleeding-edge-spec]: https://github.com/oasisprotocol/nexus/blob/main/api/spec/v1.yaml
+[replace-lines-to-run-latest-emerald]: https://github.com/oasisprotocol/nexus/blob/d48de37/tests/e2e/config/e2e-dev.yml#L1-L8
